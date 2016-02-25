@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &133062
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 454816}
+  - 114: {fileID: 11405538}
+  - 114: {fileID: 11459820}
+  m_Layer: 0
+  m_Name: TimeWarp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &454816
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 133062}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .528576672, y: -.419745594, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11405538
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 133062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 787211c5f7a5e4f9289709036c549c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icon: {fileID: 21300012, guid: 82c18f1e6c5084b3fa853bda19869fd6, type: 3}
+  weaponName: Time Orb
+  passive: 0
+  centered: 0
+--- !u!114 &11459820
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 133062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 008b49ee159b8404686ec4532520d0f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shotPrefab: {fileID: 0}
+  autoShootProbability: 0
+  fireCooldownTime: 10
+  shotSound: {fileID: 0}
+  chargeSound: {fileID: 8300000, guid: 985f93e0232fb45859d07167b5f0f1fe, type: 3}
+  timeSinceLastShot: 0
+  targeted: 0
+  charged: 0
+  liveTime: 3
+  timescale: .5
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: timescale
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: liveTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: icon
+      value: 
+      objectReference: {fileID: 21300012, guid: 82c18f1e6c5084b3fa853bda19869fd6,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: chargeSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 985f93e0232fb45859d07167b5f0f1fe, type: 3}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 133062}
+  m_IsPrefabParent: 1
